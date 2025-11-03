@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Listings | My Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1>JobPortal</h1>
+    <input type="text" id="search" placeholder="Search for jobs..." />
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+    <h2>Latest Job Openings</h2>
+    <div id="job-list" class="job-grid">
+      <!-- Job Cards will be inserted by JS -->
+    </div>
+  </main>
+
+  <!-- Modal (Job Details) -->
+  <div id="job-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-company"></p>
+      <p id="modal-location"></p>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
