@@ -13,7 +13,7 @@ app.get("/about", (req, res) => {
 
 // Root route (home page)
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.sendFile(path.join(__dirname, "public", "job.html"));
 });
 
 // Start the server
