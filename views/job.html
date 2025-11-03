@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Job Listings | My Website</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
   <!-- Navbar -->
@@ -16,12 +16,14 @@
   <!-- Main Container -->
   <main class="container">
     <h2>Latest Job Openings</h2>
+
+    <!-- ✅ This is the required element -->
     <div id="job-list" class="job-grid">
-      <!-- Job Cards will be inserted by JS -->
+      <!-- Job Cards will appear here -->
     </div>
   </main>
 
-  <!-- Modal (Job Details) -->
+  <!-- Modal -->
   <div id="job-modal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
@@ -32,7 +34,6 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 </html>
-    

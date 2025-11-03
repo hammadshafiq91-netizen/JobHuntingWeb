@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Management Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-start justify-center p-6">
+
+  <div class="flex gap-6 w-full max-w-6xl">
+
+    <!-- ✅ Left Side: Job Form -->
+    <div class="bg-white shadow-lg rounded-xl p-8 w-1/2">
+      <h1 class="text-2xl font-bold text-gray-800 mb-6 text-center">Post / Update Job</h1>
+
+      <form id="jobForm" class="space-y-5">
+        <input type="hidden" id="jobId" />
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-1">Job Title</label>
+          <input type="text" id="title" required class="w-full border-gray-300 border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="e.g. Frontend Developer">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-1">Company Name</label>
+          <input type="text" id="company" required class="w-full border-gray-300 border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="e.g. Google Inc.">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-1">Location</label>
+          <input type="text" id="location" required class="w-full border-gray-300 border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="e.g. New York, USA">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-1">Salary (Optional)</label>
+          <input type="text" id="salary" class="w-full border-gray-300 border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="e.g. $70,000/year">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-1">Job Description</label>
+          <textarea id="description" required rows="4" class="w-full border-gray-300 border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Describe the job role and responsibilities"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 rounded-lg transition-all duration-300">
+          Submit Job
+        </button>
+
+        <p id="message" class="text-center text-sm mt-4"></p>
+      </form>
+    </div>
+
+    <!-- ✅ Right Side: Job List Sidebar -->
+    <div class="bg-white shadow-lg rounded-xl p-8 w-1/2">
+      <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">All Jobs</h2>
+      <div id="jobList" class="space-y-4 overflow-y-auto max-h-[80vh]"></div>
+    </div>
+
+  </div>
+
+  <script src="./add-job.js"></script>
+</body>
+</html>

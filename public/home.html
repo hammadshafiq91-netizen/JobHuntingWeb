@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>This site is powered by Node.js and Express!</p>
+  <a href="/about">Go to About Page</a>
+
+  <hr />
+
+  <h2>Available Jobs</h2>
+  <input type="text" id="search" placeholder="Search jobs..." />
+
+  <!-- ✅ This is what was missing -->
+  <div id="job-list"></div>
+
+  <!-- ✅ Optional: Modal for job details -->
+  <div id="job-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-company"></p>
+      <p id="modal-location"></p>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
