@@ -8,6 +8,13 @@ const jobs = [
       "We are looking for a Frontend Developer proficient in HTML, CSS, and JavaScript. Experience with React is a plus.",
   },
   {
+    title: "Frontend Developer",
+    company: "software engineer",
+    location: "Pakistan, Lahore",
+    description:
+      "We are looking for a Frontend Developer proficient in HTML, CSS, and JavaScript. Experience with React is a plus.",
+  },
+  {
     title: "Government Data Analyst",
     company: "Department of Statistics",
     location: "Washington, D.C.",
